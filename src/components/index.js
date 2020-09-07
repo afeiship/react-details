@@ -49,7 +49,7 @@ export default class ReactDetails extends Component {
         {summary && (
           <summary className={`${CLASS_NAME}__summary`} children={summary} />
         )}
-        <div>{children}</div>
+        {children}
       </details>
     );
   }
