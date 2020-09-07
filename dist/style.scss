@@ -1,0 +1,9 @@
+$react-details-options: () !default;
+
+.react-details {
+  &__summary {
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+  }
+}
