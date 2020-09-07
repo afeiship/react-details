@@ -22,7 +22,7 @@ npm update @feizheng/react-details
 | className | string | false    | -       | The extended className for component. |
 | value     | bool   | false    | -       | The changed value.                    |
 | onChange  | func   | false    | noop    | The change handler.                   |
-| summary   | any    | false    | -       | The changed value.                    |
+| summary   | any    | false    | -       | The summary content.                  |
 
 
 ## usage

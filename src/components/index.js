@@ -22,7 +22,7 @@ export default class ReactDetails extends Component {
      */
     onChange: PropTypes.func,
     /**
-     * The changed value.
+     * The summary content.
      */
     summary: PropTypes.any
   };
