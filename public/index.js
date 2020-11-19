@@ -23,6 +23,7 @@ class App extends React.Component {
         <p className="p-3 bg-gray-200 mb-2">value: {this.state.value + ''}</p>
         <ReactDetails
           value={true}
+          arrow={false}
           summary="道可道，非常道"
           onChange={(e) => {
             this.setState({ value: e.target.value });

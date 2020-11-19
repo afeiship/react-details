@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/react-details",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Details for react.",
   "main": "dist/index.js",
   "scripts": {

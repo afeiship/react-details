@@ -24,11 +24,20 @@ export default class ReactDetails extends Component {
     /**
      * The summary content.
      */
-    summary: PropTypes.any
+    summary: PropTypes.any,
+    /**
+     * When present, it specifies that the details should be disabled.
+     */
+    disabled: PropTypes.bool,
+    /**
+     * When present, it specifies that the summary arrow should be display.
+     */
+    arrow: PropTypes.bool
   };
 
   static defaultProps = {
-    onChange: noop
+    onChange: noop,
+    arrow: true
   };
 
   handleToggle = (inEvent) => {
@@ -38,11 +47,11 @@ export default class ReactDetails extends Component {
   };
 
   render() {
-    const { className, summary, children, value, ...props } = this.props;
+    const { className, summary, children, value, arrow, ...props } = this.props;
     return (
       <details
         data-component={CLASS_NAME}
-        className={classNames(CLASS_NAME, className)}
+        className={classNames(CLASS_NAME, { 'no-arrow': !arrow }, className)}
         open={value}
         onToggle={this.handleToggle}
         {...props}>
