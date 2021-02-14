@@ -1,5 +1,13 @@
-.react-details {
-  color: red;
-  font-size: 12px; }
-  .react-details:active {
-    color: black; }
+.react-details[disabled] .react-details__summary, .react-details[readonly] .react-details__summary {
+  pointer-events: none; }
+
+.react-details[disabled] {
+  opacity: 0.6; }
+
+.react-details__summary {
+  outline: none;
+  cursor: pointer;
+  user-select: none; }
+
+.react-details.no-arrow .react-details__summary::-webkit-details-marker {
+  display: none; }

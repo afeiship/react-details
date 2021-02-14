@@ -20,17 +20,11 @@
     "url": "git+https://github.com/afeiship/react-details.git"
   },
   "keywords": [
-    "boilerplate",
     "react",
-    "component",
-    "cra",
-    "template",
-    "webpack",
-    "sass",
-    "scss",
-    "docs",
-    "service-worker",
-    "sw"
+    "details",
+    "summary",
+    "toggle",
+    "collapse"
   ],
   "author": "afei",
   "license": "MIT",

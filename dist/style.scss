@@ -1,10 +1,30 @@
 $react-details-options: () !default;
 
 .react-details {
-  // your styles
-  color: red;
-  font-size: 12px;
-  &:active {
-    color: black;
+  $root: &;
+
+  &[disabled],
+  &[readonly] {
+    #{$root}__summary {
+      pointer-events: none;
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.6;
+  }
+
+  &__summary {
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &.no-arrow {
+    #{$root}__summary {
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
   }
 }
