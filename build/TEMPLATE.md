@@ -30,6 +30,31 @@ __GENERATE_DOCS__
 __GENERATE_DAPP__
   ```
 
+## animation
+```css
+/* remove arrow */
+&::-webkit-details-marker {
+  // display: none;
+}
+
+
+/* add animation */
+&[open] summary ~ * {
+  animation: open 0.5s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    margin-left: -5px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+```
+
 ## documentation
 - https://afeiship.github.io/react-details/
 
